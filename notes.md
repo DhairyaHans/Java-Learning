@@ -42,7 +42,7 @@
             => java <className> 
 
 ## Flow
-![Code Flow](resources\java_flow.png)
+![Code Flow](resources/java_flow.png)
 
 ## Variables
 
