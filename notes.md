@@ -22,11 +22,11 @@
 
     - We can execute java code in the terminal using jshell
 
-    - Note -> We can write the commands directly, in the jshell and need not write the entire class declaration
-
     - To exit the jshell, type ->
 
-            => /exit    
+            => /exit  
+
+>Note -> We can write the commands directly, in the jshell and need not write the entire class declaration  
 
 
 ## Compiling Java Files
@@ -42,4 +42,74 @@
             => java <className> 
 
 ## Flow
-![Code Flow](java_flow.png)
+![Code Flow](resources\java_flow.png)
+
+## Variables
+
+### Declaration
+
+    <data_type> <variable_name>;
+
+e.g.->  int num;
+
+### Initialization
+
+    <data_type> <variable_name> = <value>;
+
+e.g.-> int num = 10;
+
+
+## Data Types
+
+### 1. Primitive
+
+    Integer -> byte, short, int, long
+    Float -> float, double
+    Character -> <all characters>
+    Boolean -> true/false
+
+>Note-> The default Data Type for decimal values in Java is **double**
+
+A double value can be defined as ->
+
+    double num = 5.6;
+
+But, we can't define a float value, like mentioned above, we need to add a *f* after the value, as ->
+
+    float num = 5.6f;
+
+
+>Note-> char in java takes 2 bytes, as Java follows *UNICODE* instead of ASCII, and a character needs to be enclosed in single quotes only.
+
+
+## Type Conversion and Casting
+
+### - Explicit Type Conversion (Type Casting)
+
+We can explicitly type cast a value of some data type to another, like ->
+
+    type_1_variable = (data_type_2) value_of_type_2;
+
+e.g.-> 
+
+    int int_val = 45;
+    byte b = (byte) int_val;
+
+>Note-> If we try to type cast a higher value than the range of the data_type, then It will Modulo(%) the value with the range of the data_type (for byte -> 256) and store the remainder in the variable
+
+e.g.
+
+    int a = 258;
+    byte b = (byte) a; 
+
+    Value of b => 2 (258 % 256 = 2)
+    
+
+### - Implicit Type Conversion
+
+A value is automatically converted to a higher order data_type of same type, like
+
+e.g. ->
+
+    byte b = 44;
+    int a = b;
