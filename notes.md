@@ -150,3 +150,33 @@ class MethodOverloading {
 }
 
 ```
+
+### Some terminologies
+
+``` Java
+class Calculator{
+    int num; // Instance Variable    
+
+    public int addNums(int n1, int n2){
+        // n1 and n2 are local variables
+        return n1+n2;
+    }
+}
+
+class Terms{
+    public static void main(String args[]){
+        Calculator obj = new Calculator();
+        // obj is a 'Reference Variable'
+        int r1 = obj.addNums(10, 20);
+        System.out.println(r1);
+    }
+}
+
+```
+
+Here, 
+
+1. Variable 'num' is *Instance Variable* of the 'Calculator Class' 
+2. The variables 'n1' and 'n2' are the *Local Variables* of the 'addNums method'
+3. The variable 'obj' is a *Reference Variable*, which refers to the location/address in the (Heap) Memory where the Object of the Calculator class is created
+4. Each Object has the Instance Variables' in the Heap Memory along with the method definitions
