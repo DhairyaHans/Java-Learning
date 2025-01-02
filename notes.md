@@ -113,3 +113,40 @@ e.g. ->
 
     byte b = 44;
     int a = b;
+
+## Classes & Objects
+
+In Java, **JVM** is responsible to **create Objects**, using a Blueprint, i.e., a Class file
+
+To create an object of a class named, "MyClass" type ->
+
+> MyClass obj = new MyClass();
+
+A Class has 'attributes' and 'member functions' (or 'methods')
+
+### Method Overloading
+
+When the same method name, under a single class, is defined multiple times, depending on the number of parameters, data type of parameters, return type of method
+
+
+``` java
+class AddCalc{
+    public int add(int n1, int n2){
+        return n1+n2;
+    }
+    public int add(int n1, int n2, int n3){
+        return n1+n2+n3;
+    }
+    public double add(double n1, int n2){
+        return n1+n2;
+    }
+}
+
+class MethodOverloading {
+    public static void main(String args[]){
+        AddCalc cd = new AddCalc();
+        System.out.println(cd.add(5.8, 88));
+    } 
+}
+
+```
