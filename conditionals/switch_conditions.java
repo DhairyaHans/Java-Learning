@@ -1,5 +1,3 @@
-import javax.swing.plaf.synth.SynthStyle;
-
 class SwitchConditions{
     public static void main(String args[]){
         int n = 6;
