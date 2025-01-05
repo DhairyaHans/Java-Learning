@@ -204,3 +204,29 @@ Here,
         nums[2] = new int[2];
 
     Here we need to define the size of each row indivisually
+
+## String
+
+* In Java, String is a class and not a primitive data type, and is declared as -
+    
+    > String name = "xyz"
+
+* Strings are Immutable in nature, i.e, once created, they can't be changed
+
+* We can have Mutable Strings in java, using _StringBuffer_ or _StringBuilder_
+
+## StringBuffer
+
+* StringBuffer can be declared just like another class Object -
+
+    > StringBuffer sb = new StringBuffer("xyz")
+
+* StringBuffer gives us extra 16 bytes of memory in advance, and the string added, adds to this 16 bytes size
+
+* These 16 bytes, acts as a buffer, in case, to avoid relocation, when the string is updated
+
+* Once defined the value, the Capacity of the StringBuffer doesn't change
+
+* We can redefine the length using the setLength function
+
+* StringBuffer is *thread safe* and StringBuilder is not
