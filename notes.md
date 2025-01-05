@@ -180,3 +180,27 @@ Here,
 2. The variables 'n1' and 'n2' are the *Local Variables* of the 'addNums method'
 3. The variable 'obj' is a *Reference Variable*, which refers to the location/address in the (Heap) Memory where the Object of the Calculator class is created
 4. Each Object has the Instance Variables' in the Heap Memory along with the method definitions
+
+## Arrays
+* Arrays can be declared/defined as follows -
+       
+        int[] arr = {1,2,3,4};
+
+        OR 
+
+        int[] arr = new int[4];
+
+* A 2-D array is declared as -
+
+         int[][] nums = new int[3][4];
+         // int[rows][cols]
+
+* A Jagged Array is an array, where each row can have different number of values -
+
+        int[][] nums = new int[3][];
+
+        nums[0] = new int[3];
+        nums[1] = new int[4];
+        nums[2] = new int[2];
+
+    Here we need to define the size of each row indivisually
