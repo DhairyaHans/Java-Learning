@@ -230,3 +230,51 @@ Here,
 * We can redefine the length using the setLength function
 
 * StringBuffer is *thread safe* and StringBuilder is not
+
+
+## INHERITANCE
+
+* In Java, We inherit a class using `extends` keyword, as ->
+
+    > public class child extends parent{}
+
+* We don't need the parent class' java file, If we have the compiled, .class file of the parent
+
+### Single Inheritance -
+
+![Single Inheritance](resources/single_inh.png)
+
+### MultiLevel Inheritance -
+
+![Multi-Level Inheritance](resources/multi_level_inh.png)
+
+## IMPORTANT 
+
+* In Java, `Multiple Inheritance` is `NOT ALLOWED`
+
+![Multiple Inheritance](resources/multiple_inh.png)
+
+* This is bcoz, When we call a member function, from an object, Java first searches the child's class, then go in the upward direction, in inheritance and wherever the function is found first, it is execute
+* In case of Multiple inheritance, If both the parents have the same function, which one will be called?
+* Due to this `Ambiguity Problem`, Java doesn't support Multiple Inheritance
+
+## super() -
+
+* `Every Class Inherits the Object class`
+* Every constructor has a function call, `super()`, at the first line
+* `super()` calls the constructor of the parent class
+
+## this() - 
+
+* `this(), Calls the constructor of the same class`
+
+## Importing Packages -
+
+* Making a package = Adding a java file in a folder
+* We can import a class from a package, using ->
+    
+    `import <package_name>.<class_name>;`
+
+* To import all classes from a package ->
+
+    `import <package_name>.* ;`
