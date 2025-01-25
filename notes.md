@@ -278,3 +278,13 @@ Here,
 * To import all classes from a package ->
 
     `import <package_name>.* ;`
+
+## `final` Keyword 
+
+* final can be used for - variable, class, method   
+* `final is used to make constants`
+* Its like, `const keyword` of Java
+
+* final <var> = make the variable, constant, can't change its value
+* final <class> = No other class can inherit this class
+* final <method> = Can't be overridden
