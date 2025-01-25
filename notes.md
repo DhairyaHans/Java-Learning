@@ -288,3 +288,51 @@ Here,
 * final <var> = make the variable, constant, can't change its value
 * final <class> = No other class can inherit this class
 * final <method> = Can't be overridden
+
+## OBJECT ORIENTED LANGUAGE
+
+* **Java is not purely Object Oriented Language**
+* *In an Object Oriented Language, Everything should be an Object*
+* In Java, Everything is an Object (Every class extends Object), except **Primitive Data Types**
+* Primitive Values like Int, float, are Primitive Types, and not Object Types
+* It helps Java, improving performance, as these primitive values are not stored in Heap as Object, etc
+
+## Wrapper Class
+
+* Classes that extend the object class, for the Primitive Types
+* Like, int -> Integer() or char -> Character() or double -> Double()
+
+* **BOXING** = *Storing a primitive value in a Wrapper Class Object*
+* **AUTO BOXING** = *Storing the primitive value in a Wrapper Class Object, where It automatically converts the primitive value to class object*
+* **UNBOXING** = *Getting the value from an Object Type to a Primitive Type*    
+* **AUTO UNBOXING** = *Allowing the Unboxing to happer Automatically*
+
+* e.g.-> 
+
+        int num = 9;
+
+        // BOXING
+        Integer num1 = new Integer(num);
+
+        // AUTO BOXING
+        Integer num2 = num;
+
+        // Get the value of the Integer class Object
+        // UNBOXING
+        int num3 = num2.intValue();
+
+        // AUTO UNBOXING
+        int num4 = num1;
+    
+
+## Abstract Class/Method
+
+* Whenever, you want to declare some features, but dont want to implement these, in the parent class
+* You want the child classes to implement these features, then you use the *abstract* keyword
+* *You can't create an Object of an Abstract Class*
+* *But you can create a reference of the Abstract Class*
+* Note 1 - **Its not mandatory for an Abstract Class to have Abstract Methods**
+* Note 2 - **If we are declaring an Abstract method, then it is mandatory to have it inside an Abstract Class**
+* Note 3 - **It is mandatory for the Child class to implement all the Abstract methods for the Parent Class**
+* Note 4 - **In Case, the Child class is also not able to implement all the abstract methods of the parent class, then the child class also becomes an Abstract Class**
+* Note 5 - **Non Abstract Classes are Called Concrete Classes**
