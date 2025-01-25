@@ -336,3 +336,36 @@ Here,
 * Note 3 - **It is mandatory for the Child class to implement all the Abstract methods for the Parent Class**
 * Note 4 - **In Case, the Child class is also not able to implement all the abstract methods of the parent class, then the child class also becomes an Abstract Class**
 * Note 5 - **Non Abstract Classes are Called Concrete Classes**
+
+## Inner Class
+
+* Class inside a class, is called Inner Class
+* Inner class can be static
+* To Create an object of a non static inner class, you need an object of the parent class
+* e.g. ->
+
+        OuterClass A = new OuterClass();
+
+        OuterClass.InnerClass obj = A.new InnerClass();
+
+* To Create an Object of a static inner class, you don't need an object of the parent class
+* e.g. ->
+
+        OuterClass.StaticInnerClass obj = new OuterClass.StaticInnerClass();
+
+## Anonymous Inner Class
+
+* To define an Anonymous Inner Class, add curly braces just before the semicolon of the line, where you are creating the class object
+* Write your own implementation, and this will give the separate implementation for that specific object only
+* e.g -
+
+        A obj = new A(){
+            public void show(){
+                System.out.println("Inside the Show of Anonymous Inner Class");
+            }
+        };
+
+## Abstract and Anonymous Inner Class
+
+* We can write the implementation of an Abstract class in the same way, we define an Anonymous Inner Class
+* The Anonymous Class must implement all the Abstract methods of the Abstract Class
