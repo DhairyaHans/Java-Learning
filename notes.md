@@ -369,3 +369,23 @@ Here,
 
 * We can write the implementation of an Abstract class in the same way, we define an Anonymous Inner Class
 * The Anonymous Class must implement all the Abstract methods of the Abstract Class
+
+# INTERFACES
+
+* An Interface is like a class, but is used to provide the structure or define the functions that need to be implemented
+* A *Class EXTENDS another Class*, whereas *A class IMPLEMENTS an Interface*
+* **All Methods** defined in an Interface are by default **Public and Abstract** 
+* **All Variables** defined in an Interface are by default **Public, Final and Static**
+* *A class implementing an Interface must implement all the methods of the Interface, else it must be declared as ABSTRACT*
+* Interface variables, being Static, can be accessed through the Interface Name, and as they are final, their values, must be defined inside the Interface and can't be changed
+* *A class can implement multiple Interfaces*, this is not possible in case of Abstract class, as Multiple Inheritance is not supported in Java
+* An Interface can extend another Interface, just like Classes
+
+## Enum
+
+* Enum is a class, but it can't extend Enum with any other class
+* rest, we can do anything we want... define methods, constructors, etc
+
+
+
+
