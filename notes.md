@@ -380,6 +380,11 @@ Here,
 * Interface variables, being Static, can be accessed through the Interface Name, and as they are final, their values, must be defined inside the Interface and can't be changed
 * *A class can implement multiple Interfaces*, this is not possible in case of Abstract class, as Multiple Inheritance is not supported in Java
 * An Interface can extend another Interface, just like Classes
+* A `Functional Interface` is an Interface with a only 1 abstract method
+
+> **NOTE -** *Lambda Expression works only with Functional Interfaces* 
+
+* For Lambda Expression, check the [Functional Interface](interfaces/FunctionalIfc.java) file
 
 ## Enum
 
