@@ -382,15 +382,34 @@ Here,
 * An Interface can extend another Interface, just like Classes
 * A `Functional Interface` is an Interface with a only 1 abstract method
 
+> **NOTE -** *A Functional Interface is also called SAM(Single Abstract Method)*
+
 > **NOTE -** *Lambda Expression works only with Functional Interfaces* 
 
 * For Lambda Expression, check the [Functional Interface](interfaces/FunctionalIfc.java) file
+
+* Three types 
+
+1. **Normal Interface** - An Interface with 2 or more methods
+
+2. **Functional Interface(or SAM)** - An Interface with only 1 method
+
+3. **Marker Interface** - An Interface with no Methods
 
 ## Enum
 
 * Enum is a class, but it can't extend Enum with any other class
 * rest, we can do anything we want... define methods, constructors, etc
 
+# THREADS
 
+## Multi Threading -
 
+* Every thread must have a run method, which is the entry point for that thread
+* The run method is the method that is executed when a thread is started
+* To Start a thread, we need to call the start method of the thread class
+* A Class must extend, `Thread`, to create a thread and run 
+* Threads have priority defined... from 1(Least Priority) to 10(Highest Priority), where 5 is the default priority
+* We can check the priority using... `getPriority()` method, on the class object
+* To set the priority... use `setPriority()` method
 
